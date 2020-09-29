@@ -3,7 +3,7 @@ FROM centos:centos7
 WORKDIR /tmp
 
 RUN yum install -y wget && echo "Downloading jdk" \ 
-    && wget https://dragonwell.oss-cn-shanghai.aliyuncs.com/11/11.0.7.2_GA/linux/x64/Alibaba_Dragonwell_11.0.7.2%2B9_Linux_x64.tar.gz \
+    && wget https://github.com/alibaba/dragonwell11/releases/download/dragonwell_11.0.7.2_GA/Alibaba_Dragonwell_11.0.7.2+9_Linux_x64.tar.gz \
     -q -O /tmp/Alibaba_Dragonwell_11.0.7.2+9_Linux_x64.tar.gz \
     && mv ./Alibaba_Dragonwell_11.0.7.2+9_Linux_x64.tar.gz /tmp/dragonwell.tar.gz
 
